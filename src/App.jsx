@@ -35,7 +35,11 @@ const App = () => {
 
   return (
     <main className="jobs-center">
-      <BtnContainer jobs={jobs} />
+      <BtnContainer
+        jobs={jobs}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
       <JobInfo jobs={jobs} currentIndex={currentIndex} />
     </main>
   );
