@@ -27,15 +27,15 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <main>
+      <main className="job-center">
         <div className="loading"></div>
       </main>
     );
   }
 
   return (
-    <main>
-      <BtnContainer />
+    <main className="jobs-center">
+      <BtnContainer jobs={jobs} />
       <JobInfo jobs={jobs} currentIndex={currentIndex} />
     </main>
   );

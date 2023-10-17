@@ -5,7 +5,7 @@ const JobInfo = ({ jobs, currentIndex }) => {
   const { title, company, dates, duties, id } = jobs[currentIndex];
 
   return (
-    <section className="jobs-center">
+    <section>
       <h3>{title}</h3>
       <p className="job-company">{company}</p>
       <p className="job-date">{dates}</p>
