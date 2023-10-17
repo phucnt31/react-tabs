@@ -6,6 +6,7 @@ const url = "https://course-api.com/react-tabs-project";
 const App = () => {
   const [jobs, setJobs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const fetchJobs = async () => {
     try {
@@ -33,7 +34,7 @@ const App = () => {
 
   return (
     <main>
-      <JobInfo jobs={jobs} />
+      <JobInfo jobs={jobs} currentIndex={currentIndex} />
     </main>
   );
 };
