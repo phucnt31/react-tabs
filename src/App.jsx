@@ -1,6 +1,15 @@
-const url = 'https://course-api.com/react-tabs-project';
+import { useState } from "react";
+import JobInfo from "./JobInfo";
+
+const url = "https://course-api.com/react-tabs-project";
 
 const App = () => {
-  return <h2>Tabs Starter</h2>;
+  const [jobs, setJobs] = useState([]);
+
+  return (
+    <main>
+      <JobInfo />
+    </main>
+  );
 };
 export default App;
